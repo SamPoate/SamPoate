@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Asap|Noto+Sans");
+
+:root {
+  --primary-text-color: #fff;
+  --secondary-text-color: #333;
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --lightgray-color: #646464;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Nanum+Gothic", sans-serif;
+  line-height: 1.4;
+  background: #181717;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Utility */
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.l-heading {
+  font-size: 6rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--primary-text-color);
+  outline-color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  color: var(--primary-text-color);
+  outline-color: #fff;
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #3fa9f0;
+}
+
+.btn-secondary:hover {
+  background: #3fa9f0;
+}
+
+/* Front Cover */
+
+#front-cover {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+#front-cover .logos {
+  position: fixed;
+}
+
+#front-cover .top-logo {
+  background: #181717;
+  padding: 0 25vw;
+}
+
+#front-cover .bottom-logo {
+  background: #181717;
+  padding: 0 25vw;
+}
+
+/* Main Content */
+#content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #f3f3f3;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 5rem;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+#content .card p {
+    margin: 1rem 2rem;
+}
+
+
+/* Dirty little spacer */
+#spacer {
+  margin-top: 150vh;
+}
