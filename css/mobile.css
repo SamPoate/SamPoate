@@ -1,0 +1,26 @@
+.l-heading {
+  font-size: 3rem;
+}
+
+#front-cover {
+  opacity: 0;
+}
+
+#title {
+  background: #000;
+  z-index: 2;
+  padding-bottom: 1rem;
+}
+
+#content {
+  position: absolute;
+  grid-template-columns: repeat(1, 1fr);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#content .card {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #f3f3f3;
+}

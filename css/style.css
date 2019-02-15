@@ -67,7 +67,7 @@ a {
 }
 
 .l-heading {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -125,17 +125,34 @@ a {
   padding: 0 25vw;
 }
 
+/* Title */
+#title {
+  position: fixed;
+  color: #f3f3f3;
+  z-index: -1;
+}
+
+#title .holder {
+  text-align: center;
+  width: 100vw;
+  margin-top: 2rem;
+}
+
 /* Main Content */
 #content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  position: fixed;
   color: #f3f3f3;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 5rem;
-  height: 100vh;
-  position: fixed;
+  height: 85vh;
   z-index: -1;
+}
+
+#content .card {
+  /* border: 1px dotted #f3f3f3; */
 }
 
 #content .card p {

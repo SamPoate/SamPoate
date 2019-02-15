@@ -19,3 +19,7 @@ $(document).on("scroll", function(e) {
     $("#content").css("z-index", "-1");
   }
 });
+
+if (window.outerWidth <= 768) {
+  $(".logos").remove();
+}
